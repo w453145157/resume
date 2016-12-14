@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>旋转木马轮播</title>
+        <link rel="stylesheet" href="css/index.css">
+        <style media="screen">
+            body,ul,li {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            .wrap {
+                width: 365px;
+                margin: 0 auto;
+            }
+            #app {
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div id="app"></div>
+        </div>
+    </body>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- <script src="js/libs/vue.js"></script>
+    <script src="js/VCarousel.js"></script> -->
+    <script type="text/javascript">
+        var data = [{
+            url:'http://music.163.com/',
+            img:'img/1.jpg'
+        },{
+            url:'http://music.163.com/',
+            img:'img/2.jpg'
+        },{
+            url:'http://music.163.com/',
+            img:'img/3.jpg'
+        },{
+            url:'http://music.163.com/',
+            img:'img/4.jpg'
+        },{
+            url:'http://music.163.com/',
+            img:'img/5.jpg'
+        },{
+            url:'http://music.163.com/',
+            img:'img/6.jpg'
+        },{
+            url:'http://music.163.com/',
+            img:'img/7.jpg'
+        }];
+        var carousel1 = new Carousel({
+            wrap:$('#app'),
+            data:data
+        });
+    </script>
+</html>
